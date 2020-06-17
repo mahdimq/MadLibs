@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/story">
+  {% for input in inputs %}
+  <!-- <label>{{input}}</label> -->
+  <input type="text" placeholder="{{input}}" name="{{input}}" id="input">
+  {% endfor %}
+  <button>Submit</button>
+</form>
+{% endblock %}
